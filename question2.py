@@ -11,6 +11,7 @@ def check(number,guess):
 
 def main():
 	count = 0
+	number = randint(0,99)
 	guess = input("Guess a number between 0 and 99: ")
 
 if __name__ == "__main__":
