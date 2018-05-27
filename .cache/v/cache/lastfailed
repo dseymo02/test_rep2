@@ -1,1 +1,4 @@
-{}
+{
+  "test.py::testComputePremium": true,
+  "test.py::testComputeRegular": true
+}

@@ -30,3 +30,11 @@ def testsqrProd():
 	a = 2
 	b = 5
 	assert sqrProd(a,b) == 100
+
+# testing for question 4
+
+def testComputeRegular():
+	assert computeRegular(minutes) == 11.00
+
+def testComputePremium():
+	assert computePremium(minutes) == 1.95
