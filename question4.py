@@ -51,12 +51,12 @@ def main():
 			acc, name, service, minutes = n[0],n[1],n[3],int(n[4])
 			charge = computeRegular(minutes)
 			balance = float(n[2]) + charge
-			charges.append(acc,name,service,charge,balance)
+			charges.append([acc,name,service,charge,balance])
 		else:
 			acc, name, service, daytime,offpeak = n[0],n[1],n[3],int(n[4]),int(n[5])
 			charge = computePremium(daytime,offpeak)
 			balance = float(n[2]) + charge
-			charges.append(acc,name,service,charge,balance)
+			charges.append([acc,name,service,charge,balance])
 	print(charges)
 
 
