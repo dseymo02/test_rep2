@@ -12,14 +12,14 @@ def check(number,guess):
 def main():
 	count = 0
 	number = randint(0,99)
-	guess = input("Guess a number between 0 and 99: ")
+	guess = int(input("Guess a number between 0 and 99: "))
 	finished = False
 	while not finished:
 		count += 1
 		if guess < number:
-			guess = input("Too low, Guess again: ")
+			guess = int(input("Too low, Guess again: "))
 		elif guess > number:
-			guess = input("Too high, Guess again: ")
+			guess = int(input("Too high, Guess again: "))
 		else:
 			finished = True
 	print("Correct. It took you, ",count," guesses")
