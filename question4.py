@@ -42,6 +42,7 @@ def main():
 		if record[0] == terminate:
 			record.pop(0)
 			finished = True
+			break
 		records.append(record)
 	print(len(records))
 
