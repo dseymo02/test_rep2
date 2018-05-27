@@ -39,7 +39,7 @@ def main():
 	terminate = 'X0000'
 	while not finished:
 		record = readRecord()
-		if records[0] == terminate:
+		if record[0] == terminate:
 			record.pop(0)
 			finished = True
 		records.append(record)
