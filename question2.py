@@ -13,6 +13,8 @@ def main():
 	count = 0
 	number = randint(0,99)
 	guess = input("Guess a number between 0 and 99: ")
-
+	finished = False
+	while not finished:
+		
 if __name__ == "__main__":
 	main()
