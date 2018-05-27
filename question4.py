@@ -19,7 +19,12 @@ def computePremium(daytime,offpeak):
 	pay1 = 0.10
 	offpeakthreshold = 100
 	pay2 = 0.05
-	 
+	total = basecharge
+	if daytime > daytimethreshold:
+		total = total + (daytime - daytimethreshold)*pay1
+	if offpeak > offpeakthreshold:
+		total = total + (offpeak - offpeakthreshold)*pay2
+	return total 
 
 def printrecord():
 	pass
