@@ -43,7 +43,7 @@ def main():
 			record.pop(0)
 			finished = True
 		records.append(record)
-	print(records)
+	print(len(records))
 
 
 if __name__ == "__main__":
