@@ -48,12 +48,12 @@ def main():
 	charges = []
 	for n in records:
 		if n[3] == "R":
-			minutes = n[4]
+			minutes = int(n[4])
 			charge = computeRegular(minutes)
 			charges.append(charge)
 		else:
-			daytime = n[4]
-			offpeak = n[5]
+			daytime = int(n[4])
+			offpeak = int(n[5])
 			charge = computePremium(daytime,offpeak)
 			charges.append(charge)
 	print(charges)
