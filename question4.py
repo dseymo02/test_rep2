@@ -1,7 +1,11 @@
 '''code for question 4'''
 
 def readRecord():
-	pass
+	record = []
+	str = input()
+	record = str.split()
+	return record
+
 
 def computeRegular(minutes):
 	threshold = 50
@@ -30,7 +34,17 @@ def printrecord():
 	pass
 
 def main():
-	pass
+	finished = False
+	records = []
+	terminate = 'X0000'
+	while not finished:
+		record = readRecord()
+		if records[0] == terminate:
+			record.pop(0)
+			finished = True
+		records.append(record)
+	print(records)
+
 
 if __name__ == "__main__":
 	main()
