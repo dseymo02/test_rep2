@@ -23,3 +23,10 @@ def testcheck():
 	assert check(number,guess1) == "Too low"
 	assert check(number,guess2) =="Too high"
 	assert check(number, guess3) =="Correct"
+
+# testing for question 3
+
+def testsqrProd():
+	a = 2
+	b = 5
+	assert sqrProd(a,b) == 100
