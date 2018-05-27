@@ -14,7 +14,12 @@ def computeRegular(minutes):
 
 
 def computePremium(daytime,offpeak):
-	pass
+	basecharge = 25.00
+	daytimethreshold = 75
+	pay1 = 0.10
+	offpeakthreshold = 100
+	pay2 = 0.05
+	 
 
 def printrecord():
 	pass
