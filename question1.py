@@ -10,6 +10,11 @@ def search(str,lst,size):
 			pos += 1
 	return result
 
+main():
+	string = "hello"
+	lst = ["hi","hello","bye"]
+	size = len(lst)
+	print(search(string,lst,size))
 
 
 if __name__ == "__main__":
