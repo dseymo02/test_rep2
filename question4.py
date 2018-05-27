@@ -48,14 +48,15 @@ def main():
 	charges = []
 	for n in records:
 		if n[3] == "R":
-			minutes = int(n[4])
+			acc, name, service, minutes = n[0],n[1],n[3],int(n[4])
 			charge = computeRegular(minutes)
-			charges.append(charge)
+			balance = int(n[2]) + charge
+			charges.append(acc,name,service,charge,balance)
 		else:
-			daytime = int(n[4])
-			offpeak = int(n[5])
+			acc, name, service, daytime,offpeak = n[0],n[1],n[3],int(n[4]),int(n[5])
 			charge = computePremium(daytime,offpeak)
-			charges.append(charge)
+			balance = int(n[2]) + charge
+			charges.append(acc,name,service,charge,balance)
 	print(charges)
 
 
