@@ -10,7 +10,7 @@ def search(str,lst,size):
 			pos += 1
 	return result
 
-main():
+def main():
 	string = "hello"
 	lst = ["hi","hello","bye"]
 	size = len(lst)
