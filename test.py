@@ -40,4 +40,4 @@ def testComputeRegular():
 def testComputePremium():
 	daytime = 0
 	offpeak = 139
-	assert computePremium(daytime,offpeak) == 1.95
+	assert computePremium(daytime,offpeak) == 26.95
