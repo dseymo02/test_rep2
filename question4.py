@@ -44,7 +44,15 @@ def main():
 			finished = True
 			break
 		records.append(record)
-	print(len(records))
+	size = len(records)
+	for n in records:
+		if n[3] == "R":
+			minutes = n[4]
+			charges = computeRegular(minutes)
+		else:
+			daytime = n[4]
+			offpeak = n[5]
+			charges = computePremium(daytime,offpeak)
 
 
 if __name__ == "__main__":
