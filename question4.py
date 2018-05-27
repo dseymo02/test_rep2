@@ -3,8 +3,15 @@
 def readRecord():
 	pass
 
-def computeRegular():
-	pass
+def computeRegular(minutes):
+	threshold = 50
+	pay1 = 10.00
+	pay2 = 0.20
+	if minutes <= threshold:
+		return pay1
+	else:
+		return pay1 + (minutes - threshold)*pay2
+
 
 def computePremium():
 	pass
