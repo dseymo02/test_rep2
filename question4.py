@@ -57,7 +57,7 @@ def main():
 			charge = computePremium(daytime,offpeak)
 			balance = float(n[2]) + charge
 			charges.append([acc,name,service,charge,balance])
-	for n in charges
+	for n in charges:
 		print(n)
 
 
