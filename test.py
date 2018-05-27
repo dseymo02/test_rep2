@@ -34,7 +34,10 @@ def testsqrProd():
 # testing for question 4
 
 def testComputeRegular():
+	minutes = 55
 	assert computeRegular(minutes) == 11.00
 
 def testComputePremium():
-	assert computePremium(minutes) == 1.95
+	daytime = 0
+	offpeak = 139
+	assert computePremium(daytime,offpeak) == 1.95

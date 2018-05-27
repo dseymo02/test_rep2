@@ -1,4 +1,3 @@
 {
-  "test.py::testComputePremium": true,
-  "test.py::testComputeRegular": true
+  "test.py::testComputePremium": true
 }

@@ -13,7 +13,7 @@ def computeRegular(minutes):
 		return pay1 + (minutes - threshold)*pay2
 
 
-def computePremium():
+def computePremium(daytime,offpeak):
 	pass
 
 def printrecord():
